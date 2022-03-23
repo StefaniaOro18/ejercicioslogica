@@ -1,0 +1,45 @@
+
+'use strict'
+
+
+
+var a = "Hello world"
+var b = (2 + 10) / (2 - 20);
+var c = (2 + 10) / (2 + 20);
+var d = (2+1);
+
+console.log(a);		
+console.log(b);	
+console.log(c);
+console.log(d);
+
+
+if (Comunes.isNumeric(a))
+	System.out.println(a + " No es un numero");
+else
+	System.out.println(a + "  es un numero");
+
+if (Comunes.isNumeric(b))
+	System.out.println(b + " No es un numero");
+else
+	System.out.println(b + "  es un numero");
+
+
+if (Comunes.isNumeric(c))
+	System.out.println(c + "NO es un numero");
+else
+	System.out.println(c + "  es un numero");
+
+if (Comunes.isNumeric(d))
+	System.out.println(d + "No es un numero");
+else
+	System.out.println(d + "  es un numero");
+ 
+ private static boolean isNumeric(String cadena){
+	try {
+		Integer.parseInt(cadena);
+		return true;
+	} catch (NumberFormatException nfe){
+		return false;
+	}
+}
